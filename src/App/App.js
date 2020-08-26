@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Header from "../Header/Header.js"
-import MenuIcon from "../Header/images/hamburger-solid.png"
 import "./style.css";
 
 class App extends Component {
@@ -28,14 +27,10 @@ class App extends Component {
       this.setState({pictures: this.res})
   }
 
-  headerImg() {
-    return <img src={MenuIcon} alt="hamburger" class="hbicon" />
-  }
-
   render() {
     return (
         <div>
-            <Header menu={this.headerImg()} />
+            <Header />
       </div>
     );
   }

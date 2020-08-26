@@ -1,18 +1,37 @@
 import React from 'react';
+import MenuIcon from "../Header/images/hamburger-solid.png"
+import Anime from "../Header/images/anime.png"
+import London from "../Header/images/london.png"
+import Australia from "../Header/images/australia.png"
+import Popular from "../Header/images/popular.png"
 import "../Header/header.css"
 
 export default function Header({menu}) {
     return (
         <header>
-            <div class="header flex">
+            <div className="header flex">
                     <input type="checkbox" id="menu-toggle" />
-                    <label for="menu-toggle" class="menu-icon">{menu}</label>
-                    <div class="slideout-sidebar">
+                <label htmlFor="menu-toggle" className="menu-icon">
+                    <img src={MenuIcon} alt="" className="hbicon" />
+                </label>
+                    <div className="slideout-sidebar">
                         <ul>
-                            <li><button id="popular">Popular Gallery</button></li>
-                            <li><button id="anime">Anime Gallery</button></li>
-                            <li><button id="london">London Gallery</button></li>
-                            <li><button id="australia">Australia Gallery</button></li>
+                        <li><button id="popular">
+                        <img src={Popular} alt="" className="hbicon" />
+                            Popular Gallery
+                            </button></li>
+                        <li><button id="anime">
+                        <img src={Anime} alt="" className="hbicon" />
+                            Anime Gallery
+                            </button></li>
+                        <li><button id="london">
+                        <img src={London} alt="" className="hbicon" />
+                            London Gallery
+                            </button></li>
+                        <li><button id="australia">
+                        <img src={Australia} alt="" className="hbicon" />
+                            Australia Gallery
+                            </button></li>
                         </ul>
                     </div>
                 </div>
