@@ -1,10 +1,10 @@
 import React from 'react';
 import "../Slider/slider.css"
 
-export default function Slider() {
+export default function Slider({link}) {
     return (
         <div id="slider">
-            <p>Content</p>
+            <img src={link} alt="" className="test123" />
         </div>
     )
 }

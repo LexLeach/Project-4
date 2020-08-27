@@ -19,22 +19,27 @@ class App extends Component {
     const url = `https://api.unsplash.com/search/photos?page=1&per_page=30/&client_id=${API_KEY}&query=popular`
     fetch(url)
       .then(res => res.json())
-      .then(res => {
+      .then(jsonRes => {
         console.log('==========================')
-        console.log(res)
+        console.log(jsonRes)
         console.log('==========================')
+        this.setState({ pictures: jsonRes })
       })
       .catch(err => {
         console.log('Something went wrong!')
       })
-      this.setState({pictures: this.res})
   }
 
   render() {
     return (
         <div id="body">
         <Header />
-        <Slider />
+        {
+          this.state.pictures.map(pictures => {
+            return (
+              <Slider />
+            )
+          })}
         <Content />
         <Footer />
       </div>
