@@ -2,5 +2,13 @@
     grid-area: content;
     display: flex;
     justify-content: center;
-    background-color: grey;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+}
+
+.images {
+    border-radius: 0.8rem;
+    max-width: 500px;
+    max-height: auto;
 }

@@ -23,7 +23,7 @@ class App extends Component {
         console.log('==========================')
         console.log(jsonRes)
         console.log('==========================')
-        this.setState({ pictures: jsonRes })
+        this.setState({ pictures: jsonRes.results })
       })
       .catch(err => {
         console.log('Something went wrong!')
@@ -32,10 +32,17 @@ class App extends Component {
 
   render() {
     return (
-        <div id="body">
+      <div id="body">
         <Header />
         <Slider />
-        <Content />
+        <div id="content">
+        {
+          this.state.pictures.map (picture => {
+            return (
+              <Content link={picture.urls.full} />
+            )
+          })}
+        </div>
         <Footer />
       </div>
     );

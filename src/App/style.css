@@ -18,7 +18,7 @@ body {
     "asideL content asideR"
     "footer footer footer";
     grid-template-columns: 15% 1fr 15%;
-    grid-template-rows: 83px 30% 70% 160px;
+    grid-template-rows: 83px 30% auto 160px;
     height: 100vh;
     margin: 0;  
 }

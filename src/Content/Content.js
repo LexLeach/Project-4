@@ -1,10 +1,8 @@
 import React from 'react';
 import "../Content/Content.css"
 
-export default function Content() {
+export default function Content(props) {
     return (
-        <div id="content">
-            <p>Content</p>
-        </div>
+        <img src={props.link} className="images" alt="" />
     )
 }
