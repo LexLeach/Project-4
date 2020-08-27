@@ -34,12 +34,7 @@ class App extends Component {
     return (
         <div id="body">
         <Header />
-        {
-          this.state.pictures.map(pictures => {
-            return (
-              <Slider />
-            )
-          })}
+        <Slider />
         <Content />
         <Footer />
       </div>
