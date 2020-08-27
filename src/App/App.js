@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import Header from "../Header/Header.js"
+import Slider from "../Slider/Slider.js"
+import Content from "../Content/Content.js";
+import Footer from "../Footer/Footer"
 import "./style.css";
 
 class App extends Component {
@@ -29,8 +32,11 @@ class App extends Component {
 
   render() {
     return (
-        <div>
-            <Header />
+        <div id="body">
+        <Header />
+        <Slider />
+        <Content />
+        <Footer />
       </div>
     );
   }
