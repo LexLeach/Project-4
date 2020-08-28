@@ -1,14 +1,22 @@
+/* * {
+    border: 1px solid red;
+} */
+
 #content {
     grid-area: content;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-    margin: 20px;
+    padding: 20px;
+}
+
+.img-flex {
+    display: flex;
+    align-items: center;
 }
 
 .images {
     border-radius: 0.8rem;
-    max-width: 500px;
-    max-height: auto;
+    width: 300px;
 }
