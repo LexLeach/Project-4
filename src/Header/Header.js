@@ -18,19 +18,19 @@ export default function Header() {
                 </label>
                 <div className="slideout-sidebar">
                     <ul>
-                    <li><button id="popular">
+                    <li><button className="popular">
                     <img src={Popular} alt="" className="hbicon" />
                         <p>Popular Gallery</p>
                         </button></li>
-                    <li><button id="anime">
+                    <li><button className="anime">
                     <img src={Anime} alt="" className="hbicon" />
                         <p>Anime Gallery</p>
                         </button></li>
-                    <li><button id="london">
+                    <li><button className="london">
                     <img src={London} alt="" className="hbicon" />
                         <p>London Gallery</p>
                         </button></li>
-                    <li><button id="australia">
+                    <li><button className="australia">
                     <img src={Australia} alt="" className="hbicon" />
                         <p>Australia Gallery</p>
                         </button></li>
